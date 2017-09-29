@@ -1,0 +1,252 @@
+@import "reset.css";
+$searchColor: #333333;
+$navColor: #151515;
+$allBrandColor:#e31436;
+
+.content{
+  width: 1090px;
+  margin: 0 auto;
+}
+/* top */
+#topNav{
+  position: relative;
+  z-index: 106;
+  background: #f2f2f2;
+  border-bottom: 1px solid #ededee;
+  color: #666;
+  #topNavWrap {
+    position: relative;
+    zoom: 1;
+    height: 30px;
+    line-height: 30px;
+  }
+  #topNavLeft{
+    float: left;
+    .login {
+      margin-left: 16px;
+    }
+    .sep {
+      padding: 0 10px;
+      color: #ccc;
+    }
+    .bottom_icon{
+      width: 14px;
+      height: 6px;
+      display: inline-block;
+      margin-left: 5px;
+      background: url("../images/bottom_icon.png") no-repeat center;
+      background-size: cover;
+    }
+  }
+  #topNavRight {
+    float: right;
+    position: relative;
+    right: -3px;
+    a{
+      border: 1px solid #cccccc;
+      padding: 5px;
+      border-radius: 3px;
+    }
+    .cart{
+      width: 14px;
+      height: 14px;
+      display: inline-block;
+      margin-right: 5px;
+      background: url("../images/cart.png") no-repeat center;
+      background-size: cover;
+    }
+  }
+}
+/* header */
+#docHead {
+  position: relative;
+  height: 100px;
+  background: #fff;
+  z-index: 103;
+}
+#docHeadWrap {
+  position: relative;
+  zoom: 1;
+  height: 100px;
+  .logo{
+    position: absolute;
+    left: 0;
+    top: 18px;
+  }
+  .m-searchiptbox-1 {
+    top: 24px;
+  }
+  .m-searchiptbox {
+    position: absolute;
+    left: 343px;
+    top: 33px;
+    z-index: 73;
+  }
+  #topsearch {
+    width: 490px;
+    height: 36px;
+    padding-left: 1px;
+    background-color: $searchColor;
+    border-radius: 0 3px 3px 0;
+    .wrap {
+      float: left;
+      margin: 2px 1px;
+      padding: 4px 5px 4px 10px;
+      background-color: #fff;
+    }
+  }
+  .wrap {
+    white-space: normal;
+    word-wrap: break-word;
+  }
+  #topSearchInput {
+    width: 423px;
+    height: 24px;
+    line-height: 24px;
+    border: 0;
+    font-size: 13px;
+  }
+  #topSearchBtn {
+    display: inline-block;
+    height: 36px;
+    width: 50px;
+    font-size: 19px;
+    line-height: 36px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    background: url("../images/search_white.png") no-repeat center;
+    background-size: 40%;
+  }
+  .m-suggestlist {
+    line-height: 22px;
+    margin-top: 2px;
+    width: 461px;
+    height: 22px;
+    overflow: hidden;
+    li{
+      float: left;
+      white-space: nowrap;
+      a{
+        color: #999999;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      .sep {
+        margin: 0 10px;
+        color: #999;
+      }
+    }
+  }
+}
+/* navigation */
+#topTabBox {
+  border-bottom: 2px solid $navColor;
+  background: $navColor;
+  z-index: 102;
+}
+#topTab {
+  position: relative;
+  zoom: 1;
+  width: 1090px;
+  margin: 0 auto;
+  height: 40px;
+  line-height: 40px;
+  z-index: 100;
+}
+.navitm-cats.z-unfold {
+  cursor: pointer;
+}
+.navitm-cats {
+  float: right;
+  height: 40px;
+  width: 160px;
+  background: $allBrandColor;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  padding-left: 0;
+  overflow: visible;
+  .toplevel {
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    width: 160px;
+    text-align: left;
+    border-bottom: 2px solid $allBrandColor;
+  }
+  .lineicon {
+    display: inline-block;
+    margin: 0 15px 0 27px;
+    width: 15px;
+    height: 12px;
+    overflow: hidden;
+    i {
+      width: 15px;
+      height: 0;
+      border-top: 2px solid #ddd;
+      display: block;
+      margin-bottom: 3px;
+    }
+  }
+}
+#funcTab {
+  position: relative;
+  z-index: 72;
+  height: 40px;
+  float: right;
+  padding-left: 20px;
+  li {
+    float: left;
+    height: 40px;
+    overflow: hidden;
+    padding: 0 20px;
+    a{
+      color: #ffffff;
+      font-size: 14px;
+    }
+    a:hover,a.on{
+      color: $allBrandColor;
+    }
+  }
+}
+/* marquee */
+#marquee1 {
+  width: 1090px;
+  height: auto;
+  overflow: hidden;
+  background-color: #eeeeee;
+  #marquee2 img, #marquee3 img {
+    float: left;
+    height: auto;
+    width: 100px;
+    margin: 20px;
+  }
+  #marquee2, #marquee3 {
+    float: left;
+  }
+  #marquee4 {
+    width: 500%;
+    float: left;
+  }
+}
+
+.lick_hot{
+  text-align: center;
+  font-size: 40px;
+}
+.like ,.hot{
+  margin-bottom: 100px;
+  img{
+    width: 70%;
+    margin: 0 auto;
+  }
+  .like_title{
+    padding: 0 60px;
+  }
+  .price{
+    color: #dc002f;
+    margin: 3px 0 5px;
+  }
+}

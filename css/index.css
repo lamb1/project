@@ -1,0 +1,63 @@
+@import url(reset.css);
+.content { width: 1090px; margin: 0 auto; }
+
+/* top */
+#topNav { position: relative; z-index: 106; background: #f2f2f2; border-bottom: 1px solid #ededee; color: #666; }
+#topNav #topNavWrap { position: relative; zoom: 1; height: 30px; line-height: 30px; }
+#topNav #topNavLeft { float: left; }
+#topNav #topNavLeft .login { margin-left: 16px; }
+#topNav #topNavLeft .sep { padding: 0 10px; color: #ccc; }
+#topNav #topNavLeft .bottom_icon { width: 14px; height: 6px; display: inline-block; margin-left: 5px; background: url("../images/bottom_icon.png") no-repeat center; background-size: cover; }
+#topNav #topNavRight { float: right; position: relative; right: -3px; }
+#topNav #topNavRight a { border: 1px solid #cccccc; padding: 5px; border-radius: 3px; }
+#topNav #topNavRight .cart { width: 14px; height: 14px; display: inline-block; margin-right: 5px; background: url("../images/cart.png") no-repeat center; background-size: cover; }
+
+/* header */
+#docHead { position: relative; height: 100px; background: #fff; z-index: 103; }
+
+#docHeadWrap { position: relative; zoom: 1; height: 100px; }
+#docHeadWrap .logo { position: absolute; left: 0; top: 18px; }
+#docHeadWrap .m-searchiptbox-1 { top: 24px; }
+#docHeadWrap .m-searchiptbox { position: absolute; left: 343px; top: 33px; z-index: 73; }
+#docHeadWrap #topsearch { width: 490px; height: 36px; padding-left: 1px; background-color: #333333; border-radius: 0 3px 3px 0; }
+#docHeadWrap #topsearch .wrap { float: left; margin: 2px 1px; padding: 4px 5px 4px 10px; background-color: #fff; }
+#docHeadWrap .wrap { white-space: normal; word-wrap: break-word; }
+#docHeadWrap #topSearchInput { width: 423px; height: 24px; line-height: 24px; border: 0; font-size: 13px; }
+#docHeadWrap #topSearchBtn { display: inline-block; height: 36px; width: 50px; font-size: 19px; line-height: 36px; color: #fff; text-align: center; cursor: pointer; background: url("../images/search_white.png") no-repeat center; background-size: 40%; }
+#docHeadWrap .m-suggestlist { line-height: 22px; margin-top: 2px; width: 461px; height: 22px; overflow: hidden; }
+#docHeadWrap .m-suggestlist li { float: left; white-space: nowrap; }
+#docHeadWrap .m-suggestlist li a { color: #999999; }
+#docHeadWrap .m-suggestlist li a:hover { text-decoration: underline; }
+#docHeadWrap .m-suggestlist li .sep { margin: 0 10px; color: #999; }
+
+/* navigation */
+#topTabBox { border-bottom: 2px solid #151515; background: #151515; z-index: 102; }
+
+#topTab { position: relative; zoom: 1; width: 1090px; margin: 0 auto; height: 40px; line-height: 40px; z-index: 100; }
+
+.navitm-cats.z-unfold { cursor: pointer; }
+
+.navitm-cats { float: right; height: 40px; width: 160px; background: #e31436; color: #fff; font-size: 14px; text-align: center; padding-left: 0; overflow: visible; }
+.navitm-cats .toplevel { display: inline-block; height: 40px; line-height: 40px; width: 160px; text-align: left; border-bottom: 2px solid #e31436; }
+.navitm-cats .lineicon { display: inline-block; margin: 0 15px 0 27px; width: 15px; height: 12px; overflow: hidden; }
+.navitm-cats .lineicon i { width: 15px; height: 0; border-top: 2px solid #ddd; display: block; margin-bottom: 3px; }
+
+#funcTab { position: relative; z-index: 72; height: 40px; float: right; padding-left: 20px; }
+#funcTab li { float: left; height: 40px; overflow: hidden; padding: 0 20px; }
+#funcTab li a { color: #ffffff; font-size: 14px; }
+#funcTab li a:hover, #funcTab li a.on { color: #e31436; }
+
+/* marquee */
+#marquee1 { width: 1090px; height: auto; overflow: hidden; background-color: #eeeeee; }
+#marquee1 #marquee2 img, #marquee1 #marquee3 img { float: left; height: auto; width: 100px; margin: 20px; }
+#marquee1 #marquee2, #marquee1 #marquee3 { float: left; }
+#marquee1 #marquee4 { width: 500%; float: left; }
+
+.lick_hot { text-align: center; font-size: 40px; }
+
+.like, .hot { margin-bottom: 100px; }
+.like img, .hot img { width: 70%; margin: 0 auto; }
+.like .like_title, .hot .like_title { padding: 0 60px; }
+.like .price, .hot .price { color: #dc002f; margin: 3px 0 5px; }
+
+/*# sourceMappingURL=index.css.map */
