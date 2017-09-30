@@ -118,25 +118,26 @@ $allBrandColor:#e31436;
     background: url("../images/search_white.png") no-repeat center;
     background-size: 40%;
   }
-  .m-suggestlist {
-    line-height: 22px;
-    margin-top: 2px;
-    width: 461px;
-    height: 22px;
-    overflow: hidden;
-    li{
-      float: left;
-      white-space: nowrap;
-      a{
-        color: #999999;
-      }
-      a:hover {
-        text-decoration: underline;
-      }
-      .sep {
-        margin: 0 10px;
-        color: #999;
-      }
+
+}
+.m-suggestlist {
+  line-height: 22px;
+  margin-top: 2px;
+  width: 461px;
+  height: 22px;
+  overflow: hidden;
+  li{
+    float: left;
+    white-space: nowrap;
+    a{
+      color: #999999;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .sep {
+      margin: 0 10px;
+      color: #999;
     }
   }
 }
@@ -234,7 +235,7 @@ $allBrandColor:#e31436;
 
 .lick_hot{
   text-align: center;
-  font-size: 40px;
+  font-size: 36px;
 }
 .like ,.hot{
   margin-bottom: 100px;
@@ -248,5 +249,13 @@ $allBrandColor:#e31436;
   .price{
     color: #dc002f;
     margin: 3px 0 5px;
+  }
+}
+#hot_list{
+  display: table;
+  width: auto;
+  margin: 2px auto;
+  li a:hover{
+    color: #dc002f;
   }
 }

@@ -24,11 +24,12 @@
 #docHeadWrap .wrap { white-space: normal; word-wrap: break-word; }
 #docHeadWrap #topSearchInput { width: 423px; height: 24px; line-height: 24px; border: 0; font-size: 13px; }
 #docHeadWrap #topSearchBtn { display: inline-block; height: 36px; width: 50px; font-size: 19px; line-height: 36px; color: #fff; text-align: center; cursor: pointer; background: url("../images/search_white.png") no-repeat center; background-size: 40%; }
-#docHeadWrap .m-suggestlist { line-height: 22px; margin-top: 2px; width: 461px; height: 22px; overflow: hidden; }
-#docHeadWrap .m-suggestlist li { float: left; white-space: nowrap; }
-#docHeadWrap .m-suggestlist li a { color: #999999; }
-#docHeadWrap .m-suggestlist li a:hover { text-decoration: underline; }
-#docHeadWrap .m-suggestlist li .sep { margin: 0 10px; color: #999; }
+
+.m-suggestlist { line-height: 22px; margin-top: 2px; width: 461px; height: 22px; overflow: hidden; }
+.m-suggestlist li { float: left; white-space: nowrap; }
+.m-suggestlist li a { color: #999999; }
+.m-suggestlist li a:hover { text-decoration: underline; }
+.m-suggestlist li .sep { margin: 0 10px; color: #999; }
 
 /* navigation */
 #topTabBox { border-bottom: 2px solid #151515; background: #151515; z-index: 102; }
@@ -53,11 +54,14 @@
 #marquee1 #marquee2, #marquee1 #marquee3 { float: left; }
 #marquee1 #marquee4 { width: 500%; float: left; }
 
-.lick_hot { text-align: center; font-size: 40px; }
+.lick_hot { text-align: center; font-size: 36px; }
 
 .like, .hot { margin-bottom: 100px; }
 .like img, .hot img { width: 70%; margin: 0 auto; }
 .like .like_title, .hot .like_title { padding: 0 60px; }
 .like .price, .hot .price { color: #dc002f; margin: 3px 0 5px; }
+
+#hot_list { display: table; width: auto; margin: 2px auto; }
+#hot_list li a:hover { color: #dc002f; }
 
 /*# sourceMappingURL=index.css.map */
