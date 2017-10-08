@@ -71,3 +71,51 @@
     }
   }
 }
+
+.comment{
+  border-bottom: 1px dashed #a9a9a9;
+  padding: 15px 0;
+  .comment_user{
+    width: 150px;
+    border-right: 1px dashed #a9a9a9;
+    img{
+      width: 50px;
+      border-radius: 50%;
+      border: 1px solid #a9a9a9;
+    }
+    h4{
+      font-weight: bold;
+      padding: 5px 0;
+    }
+    h3{
+      width: 100px;
+      height: 17px;
+      background: url("../images/card.png") no-repeat;
+      background-size: contain;
+      line-height: 17px;
+      padding-left: 37px;
+      color: #a9a9a9;
+    }
+    p{
+      color: #a9a9a9;
+    }
+  }
+  .comment_details{
+    width: 625px;
+    .date{
+      padding-left: 100px;
+      color: #a9a9a9;
+    }
+    .comment_msg{
+      margin-top: 10px;
+    }
+  }
+}
+.star{
+  img{
+    float: left;
+    padding: 0 1px;
+    width: 15px;
+    height: 15px;
+  }
+}
