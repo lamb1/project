@@ -7,17 +7,19 @@
     <script src="js/jquery-1.10.1.min.js"></script>
 </head>
 <body>
-<nav id="topNav" class="content">
-    <div id="topNavWrap" class="clearfix">
-        <div id="topNavLeft">
-            <a class="login" href="#">登录</a>
-            <span class="sep">|</span>
-            <a target="_blank" href="#">注册</a>
-            <span class="sep">|</span>
-            <a target="_blank" href="#">我的账户<i class="bottom_icon"></i></a>
-        </div>
-        <div id="topNavRight">
-            <a target="_blank" href="#"><i class="cart"></i>去购物车结算</a>
+<nav id="topNav">
+    <div class="content">
+        <div id="topNavWrap" class="clearfix">
+            <div id="topNavLeft">
+                <a class="login" href="#">登录</a>
+                <span class="sep">|</span>
+                <a target="_blank" href="#">注册</a>
+                <span class="sep">|</span>
+                <a target="_blank" href="#">我的账户<i class="bottom_icon"></i></a>
+            </div>
+            <div id="topNavRight">
+                <a target="_blank" href="#"><i class="cart"></i>去购物车结算</a>
+            </div>
         </div>
     </div>
 </nav>
@@ -109,12 +111,18 @@
                 <div class="item_info basic_info">
                     <div class="info">
                         <h3 class="title"><span></span>组合套装：</h3>
-                        <p>SEPHORA丝芙兰滋润沐浴液</p>
-                        <p>“The beauty bath: 沐浴为生活带来美丽”</p>
-                        <p>Beauty in products: 更现代、更精致、更优雅的设计.</p>
-                        <p>Beauty in formulas: 增强护肤效果，保持柔嫩的肌肤.</p>
-                        <p>Beauty in fragrances: 天然的香料，降低浓度；8种新型花香.</p>
-                        <p>这款沐浴乳创造丰富的泡沫，散发迷人芳香，采用超细腻配方，深度清洁但无干燥感，滋润且带来芳香诱人的肌肤.</p>
+                        <p>搭配推荐</p>
+                        <div class="collocation clearfix">
+                            <div class="pro_item">
+                                <a target="_blank" href="#">
+                                    <img src="images/item2.jpg" alt="">
+                                    <p class="pro_brand">LANGIGE</p>
+                                    <p class="pro_title">兰芝夜间修护睡眠面膜</p>
+                                    <p class="pro_price">¥195.00</p>
+                                    <s>¥69.00</s>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                     <div class="info">
                         <h3 class="title"><span></span>组合套装：</h3>
@@ -142,7 +150,7 @@
                                     <img src="images/star.png" alt="">
                                     <div class="date">2017-03-22 13:03:07</div>
                                 </div>
-                                <div class="content_msg">
+                                <div class="comment_msg">
                                     味道很好闻！喜欢呀~就是一次量有点少了，下次买一瓶的试试。
                                 </div>
                             </div>
@@ -163,7 +171,7 @@
                                     <img src="images/star.png" alt="">
                                     <div class="date">2017-03-22 13:03:07</div>
                                 </div>
-                                <div class="content_msg">
+                                <div class="comment_msg">
                                     味道很好闻！喜欢呀~就是一次量有点少了，下次买一瓶的试试。
                                 </div>
                             </div>
@@ -184,7 +192,7 @@
                                     <img src="images/star.png" alt="">
                                     <div class="date">2017-03-22 13:03:07</div>
                                 </div>
-                                <div class="content_msg">
+                                <div class="comment_msg">
                                     味道很好闻！喜欢呀~就是一次量有点少了，下次买一瓶的试试。
                                 </div>
                             </div>
@@ -214,101 +222,21 @@
                 </div>
                 <div class="item_info basic_info">
                     <div class="info">
-                        <h3 class="title"><span></span>产品咨询：</h3>
-                        <p>SEPHORA丝芙兰滋润沐浴液</p>
-                        <p>“The beauty bath: 沐浴为生活带来美丽”</p>
-                        <p>Beauty in products: 更现代、更精致、更优雅的设计.</p>
-                        <p>Beauty in formulas: 增强护肤效果，保持柔嫩的肌肤.</p>
-                        <p>Beauty in fragrances: 天然的香料，降低浓度；8种新型花香.</p>
-                        <p>Beauty in colors: 更加缤纷，更多色彩.</p>
-                        <p>丝芙兰沐浴胶囊的特色之处:</p>
-                        <p>柔滑沐浴乳清洁肌肤，无干燥感。.</p>
-                        <p>14种香味和色彩。</p>
-                        <p>这款沐浴乳创造丰富的泡沫，散发迷人芳香，采用超细腻配方，深度清洁但无干燥感，滋润且带来芳香诱人的肌肤.</p>
-                    </div>
-                    <div class="info">
-                        <h3 class="title"><span></span>产品咨询：</h3>
-                        <p>配方包含一种生物脂，具有保湿和焕肤效果。</p>
-                        <p>此外，它还包含甘油成分，具有良好的保湿性能。</p>
-                        <p>每款沐浴乳根据香味的不同都包含不同萃取成分</p>
+                        <h3 class="title"><span></span>产品咨询 Q&A</h3>
+                        <p class="question">Q. 请问这个是用来清洁的，还是洗完澡后涂抹的身体乳</p>
+                        <p>A. 您好，这款产品是清洁类，感谢您对丝芙兰的支持，祝您购物愉快！</p>
+                        <p class="question">Q. 请问运费怎么算</p>
+                        <p>A. 你好，官网上满300即可免运费，感谢您对丝芙兰的支持，祝您购物愉快！</p>
+                        <p class="question">Q. 一个能用几次大概？</p>
+                        <p>A. 您好，具体要根据用量和使用频率决定的，感谢您对丝芙兰官网的关注和支持，祝您购物愉快！</p>
+                        <p class="question">Q. 请问有大瓶的嘛？</p>
+                        <p>A. 您好，目前只有胶囊。</p>
                     </div>
                 </div>
             </div>
 
         </div>
     </div>
-</div>
-<div style="padding: 10px;margin: 10px">
-    <p>111</p>
-    <p>111</p>
-    <p>111</p>
-    <p>111</p>
-</div>
-<div>
-    <p>111</p>
-    <p>111</p>
-    <p>111</p>
-    <p>111</p>
-</div>
-<div style="padding: 10px;margin: 10px">
-    <p>111</p>
-    <p>111</p>
-    <p>111</p>
-    <p>111</p>
-</div>
-<div>
-    <p>111</p>
-    <p>111</p>
-    <p>111</p>
-    <p>111</p>
-</div>
-<div style="padding: 10px;margin: 10px">
-    <p>111</p>
-    <p>111</p>
-    <p>111</p>
-    <p>111</p>
-</div>
-<div>
-    <p>111</p>
-    <p>111</p>
-    <p>111</p>
-    <p>111</p>
-</div>
-<div style="padding: 10px;margin: 10px">
-    <p>111</p>
-    <p>111</p>
-    <p>111</p>
-    <p>111</p>
-</div>
-<div>
-    <p>111</p>
-    <p>111</p>
-    <p>111</p>
-    <p>111</p>
-</div>
-<div style="padding: 10px;margin: 10px">
-    <p>111</p>
-    <p>111</p>
-    <p>111</p>
-    <p>111</p>
-</div>
-<div>
-    <p>111</p>
-    <p>111</p>
-    <p>111</p>
-    <p>111</p>
-</div>
-<div style="padding: 10px;margin: 10px">
-    <p>111</p>
-    <p>111</p>
-    <p>111</p>
-    <p>111</p>
-</div>
-<div>
-    <p>111</p>
-    <p>111</p>
-    <p>111</p>
-    <p>111</p>
 </div>
 <script>
     $('.pro_nav ul li').on('click', function () {

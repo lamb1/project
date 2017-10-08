@@ -119,3 +119,41 @@
     height: 15px;
   }
 }
+.question{
+  color: #dc002f;
+}
+.collocation{
+  border-top: 1px solid #a9a9a9;
+  border-bottom: 1px dashed #a9a9a9;
+  .item{
+    width: 180px;
+    img{
+      width: 100px;
+    }
+  }
+}
+.pro_item{
+  width: 120px;
+  float: left;
+  padding: 10px 15px;
+  position: relative;
+  img{
+    width: 100px;
+  }
+  .pro_brand{
+    text-align: center;
+    font-weight: bold;
+  }
+  .pro_title{
+    padding: 1px 0;
+    margin: 2px 0 2px;
+  }
+  .pro_price{
+    font-weight: bold;
+    color: #dc002f;
+    bottom: 50px;
+  }
+  s{
+    color: #a9a9a9;
+  }
+}
