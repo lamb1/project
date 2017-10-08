@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>商品详情</title>
+    <!-- xzoom plugin here -->
+
     <link rel="stylesheet" href="css/detail.css">
     <script src="js/jquery-1.10.1.min.js"></script>
 </head>
@@ -73,8 +75,80 @@
         </ul>
     </div>
 </nav>
+<div class="content clearfix">
+    <div class="fl">
+        <div id="big">
+            <div id="small-box">
+                <div id="mark"></div>
+                <div id="float-box"></div>
+                <img src="images/item1.jpg"/>
+            </div>
+            <div id="big-box">
+                <img style="width: 200%" src="images/item1.jpg"/>
+            </div>
+            <div class="list clearfix">
+                <div class="fl">
+                    <img src="images/item1.jpg" alt="">
+                </div>
+                <div class="fl">
+                    <img src="images/item2.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fr item_msg">
+        <p class="pro_brand">SEPHORA </p>
+        <p class="pro_title">丝芙兰滋润沐浴液(胶囊)</p>
+        <p class="pro_en">SEPHORA BODY WASH (CAPSULE)</p>
+        <div class="price">
+            <p>价格：<span>¥10.00</span></p>
+            <p>货号：芒果香8ML<243069></p>
+        </div>
+        <div class="select_specification clearfix">
+            <div class="fl">
+                请选择：
+            </div>
+            <div class="fl specification">
+                <span class="spec on">芒果香</span>
+                <span class="spec">绿茶香</span>
+                <span class="spec">牡丹香</span>
+                <span class="spec">香草香</span>
+                <span class="spec">椰子香</span>
+                <span class="spec">蓝莓香</span>
+                <span class="spec">柠檬马鞭草香</span>
+                <span class="spec">棉花花香</span>
+            </div>
+        </div>
+        <div class="amount clearfix">
+            <div class="fl">
+                数&emsp;量：
+            </div>
+            <div class="fl">
+                <select>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+        </div>
+        <div class="add_cart">
+            <div class="pro_cart fl">
+                <i class="cart"></i>加入购物车
+            </div>
+            <div class="pro_collection fl">
+                <i class="collection"></i>收藏该商品
+            </div>
+        </div>
+    </div>
+</div>
 <div class="content clearfix pro_d">
-
     <div class="pro_details">
         <div class="clearfix">
             <div class="pro_nav clearfix">
@@ -146,7 +220,7 @@
                                     <img src="images/star_on.png" alt="">
                                     <img src="images/star_on.png" alt="">
                                     <img src="images/star_on.png" alt="">
-                                    <img src="images/star_on.png" alt="">
+                                    <img src="images/star.png" alt="">
                                     <img src="images/star.png" alt="">
                                     <div class="date">2017-03-22 13:03:07</div>
                                 </div>
@@ -168,7 +242,7 @@
                                     <img src="images/star_on.png" alt="">
                                     <img src="images/star_on.png" alt="">
                                     <img src="images/star_on.png" alt="">
-                                    <img src="images/star.png" alt="">
+                                    <img src="images/star_on.png" alt="">
                                     <div class="date">2017-03-22 13:03:07</div>
                                 </div>
                                 <div class="comment_msg">
@@ -189,7 +263,7 @@
                                     <img src="images/star_on.png" alt="">
                                     <img src="images/star_on.png" alt="">
                                     <img src="images/star_on.png" alt="">
-                                    <img src="images/star.png" alt="">
+                                    <img src="images/star_on.png" alt="">
                                     <div class="date">2017-03-22 13:03:07</div>
                                 </div>
                                 <div class="comment_msg">
@@ -238,7 +312,9 @@
         </div>
     </div>
 </div>
+
 <script>
+
     $('.pro_nav ul li').on('click', function () {
         $(this).addClass('on').siblings().removeClass('on');
         if($('body,html').scrollTop()<=214){
@@ -246,7 +322,6 @@
         }else {
             $('body,html').animate({scrollTop: $('.basic_info').eq($(this).index())[0].offsetTop - 30}, 500);
         }
-
     });
     var h = 0;
     for(var i =0; i<$('.pro_d').prevAll().length;i++){
@@ -254,6 +329,65 @@
     }
     $(window).on('scroll', function () {
         $('body,html').scrollTop() > h + 20 ? $('.pro_nav').addClass('fixed') : $('.pro_nav').removeClass('fixed');
+    });
+    //放大镜
+    var objDemo = document.getElementById("big");
+    var objSmallBox = document.getElementById("small-box");
+    var objMark = document.getElementById("mark");
+    var objFloatBox = document.getElementById("float-box");
+    var objBigBox = document.getElementById("big-box");
+    var objBigBoxImage = objBigBox.getElementsByTagName("img")[0];
+
+    objMark.onmouseover = function () {
+        objFloatBox.style.display = "block";
+        objBigBox.style.display = "block";
+    };
+
+    objMark.onmouseout = function () {
+        objFloatBox.style.display = "none";
+        objBigBox.style.display = "none";
+    };
+
+    objMark.onmousemove = function (ev) {
+
+        var _event = ev || window.event;  //兼容多个浏览器的event参数模式
+
+        var left = _event.clientX - objDemo.offsetLeft - objSmallBox.offsetLeft - objFloatBox.offsetWidth / 2;
+        var top = _event.clientY - objDemo.offsetTop - objSmallBox.offsetTop - objFloatBox.offsetHeight / 2;
+
+        if (left < 0) {
+            left = 0;
+        } else if (left > (objMark.offsetWidth - objFloatBox.offsetWidth)) {
+            left = objMark.offsetWidth - objFloatBox.offsetWidth;
+        }
+
+        if (top < 0) {
+            top = 0;
+        } else if (top > (objMark.offsetHeight - objFloatBox.offsetHeight)) {
+            top = objMark.offsetHeight - objFloatBox.offsetHeight;
+
+        }
+
+        objFloatBox.style.left = left + "px";   //oSmall.offsetLeft的值是相对什么而言
+        objFloatBox.style.top = top + "px";
+
+        var percentX = left / (objMark.offsetWidth - objFloatBox.offsetWidth);
+        var percentY = top / (objMark.offsetHeight - objFloatBox.offsetHeight);
+
+        objBigBoxImage.style.left = -percentX * (objBigBoxImage.offsetWidth - objBigBox.offsetWidth) + "px";
+        objBigBoxImage.style.top = -percentY * (objBigBoxImage.offsetHeight - objBigBox.offsetHeight) + "px";
+    };
+    $('.list').on('click', 'div', function () {
+        $('#small-box').find('img').attr('src', $(this).find('img').attr('src'));
+        $('#big-box').find('img').attr('src', $('#small-box').find('img').attr('src'));
+    });
+    //选择规格
+    $('.specification').on('click', '.spec', function () {
+        $(this).addClass('on').siblings().removeClass('on');
+    });
+    //收藏商品
+    $('.pro_collection').on('click', function () {
+        $(this).find('.collection').hasClass('on') ? $(this).find('.collection').removeClass('on') : $(this).find('.collection').addClass('on');
     });
 </script>
 </body>
