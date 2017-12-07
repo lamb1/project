@@ -1,0 +1,31 @@
+{
+  "project" : "test",
+  "localserver" : {
+    "host" : "localhost",
+    "port" : "8081"
+  },
+
+  "develop" : {
+    "host" : "192.168.8.200",
+    "user" : "root",
+    "port" : "22",
+    "remotePath" :"/opt/tomcat/tomcat_admin/webapps/admin/",
+    "pass": "admin"
+  },
+
+  "test" : {
+    "host" : "120.76.41.53",
+    "user" : "root",
+    "port" : "22",
+    "remotePath" :"/mnt/tomcat-test/webapps/admin/",
+    "pass": "Baoqilai20170605!@#$%^"
+  },
+
+  "ready" : {
+    "host" : "119.23.146.228",
+    "user" : "root",
+    "port" : "22",
+    "remotePath" :"/opt/tomcat/tomcat_admin/webapps/admin/",
+    "pass": "Ben20170315!@#"
+  }
+}
